@@ -14,7 +14,7 @@ body {
   width: 100%;
   height: 100vh;
   padding: 0.625rem;
-  background: black;
+  background: hsl(0deg, 0%, 98%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,7 +141,7 @@ body .attribution a {
     width: 31%;
     padding-right: 7%;
     height: 16rem;
-    transition: transform 1s;
+    transition: transform, box-shadow, 1s;
   }
   .container .container_card .position_container {
     width: 31%;
@@ -152,5 +152,6 @@ body .attribution a {
   }
   .container .container_card .card:hover {
     transform: scale(1.1);
+    box-shadow: 0px 19px 40px rgba(0, 0, 0, 0.19);
   }
 }/*# sourceMappingURL=style.css.map */
