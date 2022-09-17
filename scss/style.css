@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+/*Font*/
+/*Colors*/
+/*Initial settings*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/*Movile first desigm layout*/
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 0.625rem;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.container {
+  width: 100%;
+  max-width: 90rem;
+  height: auto;
+  padding-inline: 6%;
+  padding-block: 1.2rem;
+  margin-block: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: hsl(0deg, 0%, 98%);
+}
+.container .container_txt {
+  width: 100%;
+  height: 15.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .container_txt h2 {
+  font: 200 1.5rem "Poppins", sans-serif;
+  color: hsl(234deg, 12%, 34%);
+  text-align: center;
+}
+.container .container_txt h1 {
+  font: 600 1.5rem "Poppins", sans-serif;
+  color: hsl(234deg, 12%, 34%);
+  text-align: center;
+}
+.container .container_txt p {
+  font: 400 1rem "Poppins", sans-serif;
+  color: hsl(229deg, 6%, 66%);
+  text-align: center;
+  margin-top: 1rem;
+}
+.container .container_card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 0.6rem;
+}
+.container .container_card .position_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .container_card .card {
+  width: 100%;
+  height: 14.3rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1.7rem 16% 1.7rem 1.7rem;
+  margin-block: 1rem;
+  background: hsl(0deg, 0%, 100%);
+  box-shadow: 0px 19px 20px rgba(0, 0, 0, 0.19);
+  border-radius: 0.5rem;
+}
+.container .container_card .card h2 {
+  font: 600 1.2rem "Poppins", sans-serif;
+  color: hsl(234deg, 12%, 34%);
+}
+.container .container_card .card p {
+  font: 400 0.75rem "Poppins", sans-serif;
+  color: hsl(229deg, 6%, 66%);
+  margin-top: 0.5rem;
+}
+.container .container_card .card img {
+  position: absolute;
+  bottom: 1.7rem;
+  right: 1.7rem;
+}
+.container .container_card .item-1 {
+  border-top: 0.3rem solid hsl(180deg, 62%, 55%);
+}
+.container .container_card .item-2 {
+  border-top: 0.3rem solid hsl(0deg, 78%, 62%);
+}
+.container .container_card .item-3 {
+  border-top: 0.3rem solid hsl(34deg, 97%, 64%);
+}
+.container .container_card .item-4 {
+  border-top: 0.3rem solid hsl(212deg, 86%, 64%);
+}
+
+/*responsive query*/
+@media only screen and (min-width: 55rem) {
+  .container .container_txt h2 {
+    font-size: 2.3rem;
+  }
+  .container .container_txt h1 {
+    font-size: 2.3rem;
+  }
+  .container .container_txt p {
+    width: 35rem;
+  }
+  .container .container_card {
+    flex-direction: row;
+  }
+  .container .container_card .card {
+    width: 31%;
+    padding-right: 7%;
+    height: 16rem;
+    transition: transform 1s;
+  }
+  .container .container_card .position_container {
+    width: 31%;
+  }
+  .container .container_card .position_container .card {
+    width: 100%;
+    padding-right: 16%;
+  }
+  .container .container_card .card:hover {
+    transform: scale(1.1);
+  }
+}/*# sourceMappingURL=style.css.map */
